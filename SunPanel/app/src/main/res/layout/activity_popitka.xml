@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/Listing"
+            android:layout_width="match_parent"
+            android:layout_height="64dp" />
+
+        <TextView
+            android:id="@+id/SecondNameClientView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть ваше прізвище" />
+
+        <EditText
+            android:id="@+id/SecondNameClient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/NameClientView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть ваше ім'я" />
+
+        <EditText
+            android:id="@+id/NameClient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PatronymicView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть ваше по-батькові" />
+
+        <EditText
+            android:id="@+id/Patronymic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PlaceClientView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть вашу адресу" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/MailClientView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть вашу електронну адресу" />
+
+        <EditText
+            android:id="@+id/MailClient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/PasswordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть пароль для користувача" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/PhoneClientView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Введіть номер мобільного" />
+
+        <EditText
+            android:id="@+id/PhoneClient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/NamePanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть Назву панелі"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <EditText
+            android:id="@+id/NamePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <TextView
+            android:id="@+id/IdPanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть id панелі" />
+
+        <EditText
+            android:id="@+id/IdPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PricePanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть ціну панелі"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <EditText
+            android:id="@+id/PricePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.293" />
+
+        <TextView
+            android:id="@+id/TypePanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть тип панелі"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/TypePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <TextView
+            android:id="@+id/SizePanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть розмір панелі (Довжина х Ширина)"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
+
+        <EditText
+            android:id="@+id/SizePanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.441" />
+
+        <TextView
+            android:id="@+id/KKDPanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть KKD панелі в %"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.652" />
+
+        <EditText
+            android:id="@+id/KKDPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/KolovoPanelView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кількість панелей" />
+
+        <EditText
+            android:id="@+id/KolovoPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/SpecificPanelView"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:text="Введіть додаткову інформацію про панелі"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.806" />
+
+        <EditText
+            android:id="@+id/SpecificPanel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.884" />
+
+        <TextView
+            android:id="@+id/AkkumView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть Назву акумулятора"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+        <EditText
+            android:id="@+id/Akkum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <TextView
+            android:id="@+id/InvertorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть назва інвертора"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Invertor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <TextView
+            android:id="@+id/ConrtrollerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть назва контролера"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.652" />
+
+        <EditText
+            android:id="@+id/Conrtroller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733" />
+
+
+        <TextView
+            android:id="@+id/PriceDopView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть ціну додаткового обладнання "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.806" />
+
+        <EditText
+            android:id="@+id/PriceDop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.884" />
+
+        <TextView
+            android:id="@+id/idKomplectView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть id обладнення"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
+
+        <EditText
+            android:id="@+id/idKomplect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.441" />
+
+        <TextView
+            android:id="@+id/KOLOVODOpView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть кількість додаткового обладнення"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <EditText
+            android:id="@+id/KOLOVODOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.293" />
+
+        <TextView
+            android:id="@+id/NameServiceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть назву сервісу" />
+
+        <EditText
+            android:id="@+id/NameService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/StaffView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть id робітникa" />
+
+        <EditText
+            android:id="@+id/Staff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/AddressServiceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть адресу сервісу" />
+
+        <EditText
+            android:id="@+id/AddressService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PhoneServiceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть номер сервісу" />
+
+        <EditText
+            android:id="@+id/PhoneService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/MailServiceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть єлектр. пошту сервісу" />
+
+        <EditText
+            android:id="@+id/MailService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/TypeGarantView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть тип гарантії" />
+
+        <EditText
+            android:id="@+id/TypeGarant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TimeGarantView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть час дії гарантії" />
+
+        <EditText
+            android:id="@+id/TimeGarant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/TypeUslugView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть послугу" />
+
+        <EditText
+            android:id="@+id/TypeUslug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/PriceUslugView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть ціну послуги" />
+
+        <EditText
+            android:id="@+id/PriceUslug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/TimeUslugView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть час виконання послуги" />
+
+        <EditText
+            android:id="@+id/TimeUslug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/IdServiceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введіть id сервісу" />
+
+        <EditText
+            android:id="@+id/IdService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="178dp"
+                android:layout_height="match_parent"
+                android:onClick="save"
+                android:text="Зберегти" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:onClick="delete"
+                android:text="Видалити" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

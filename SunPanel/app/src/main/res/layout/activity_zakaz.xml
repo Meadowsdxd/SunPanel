@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order">
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="724dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101">
+
+        <TextView
+            android:id="@+id/Zakaz"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Zakaz2"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Zakaz3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Zakaz4"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Zakaz5"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/Send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Zvit"
+            android:text="Отправить" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
